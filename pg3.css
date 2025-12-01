@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar .active {
+    color: #0ba36a;
+    font-weight: 600;
+}
+
+.nav-right .signin {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main */
+.main {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.main h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.sub {
+    color: #777;
+}
+
+/* Filters */
+.filters {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.filters h3 {
+    margin-bottom: 10px;
+}
+
+.filter-row label {
+    font-weight: 600;
+}
+
+.buttons {
+    margin: 10px 0 20px 0;
+}
+
+.buttons button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.buttons .active {
+    background: #0ba36a;
+    color: white;
+    border-color: #0ba36a;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.card .desc {
+    color: #666;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.price {
+    margin: 5px 0;
+}
+
+.details {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background: #0ba36a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background: #1d1d1d;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.footer a {
+    display: block;
+    margin: 5px 0;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #bbb;
+}
+
+.copyright {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+}

@@ -1,0 +1,173 @@
+LogIn CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f4f7f6;
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-right .signin {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    margin: 40px auto;
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Login Box */
+.login-box {
+    background: white;
+    padding: 40px;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    color: #777;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #0ba36a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.or {
+    text-align: center;
+    margin: 15px 0;
+    color: #666;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-buttons button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.signup {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Right Side Panel */
+.side-panel {
+    background: #0ba36a;
+    color: white;
+    padding: 40px;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.meal-img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background: #1d1d1d;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.footer a {
+    display: block;
+    color: #ddd;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #bbb;
+}
+
+.copyright {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    color: #aaa;
+}
