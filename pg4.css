@@ -1,4 +1,4 @@
-CheckOut CSS
+
 * {
     margin: 0;
     padding: 0;
@@ -50,9 +50,12 @@ body {
 }
 
 .hero-img {
-    width: 100%;
+    width: 100%;         /* Full width of its container */
+    max-width: 750px;    /* Larger max size */
     border-radius: 12px;
+    display: block;
 }
+
 
 .plan-box {
     background: white;
