@@ -1,96 +1,117 @@
+LogIn HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EatSync — Sign In</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pg2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EatSync - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="login-page">
-  <header class="site-header small">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="https://i.ibb.co/3s7k9mD/logo-circle.png" alt="EatSync" class="logo" />
-        <span class="brand-name">EatSync</span>
-      </div>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="meal-plans.html">Meal Plans</a>
-      </nav>
-    </div>
-  </header>
+<body>
 
-  <main class="container login-grid">
-    <section class="login-card">
-      <div class="card-top">
-        <img src="https://i.ibb.co/3s7k9mD/logo-circle.png" alt="logo" style="width:40px">
-        <h2>Welcome Back</h2>
-        <p class="muted">Sign in to continue to your meal plans</p>
-      </div>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">EatSync</div>
 
-      <form id="loginForm" class="form">
-        <label>Email Address
-          <input type="email" id="email" placeholder="Enter your email" required>
-        </label>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">GoalSync Builder</a>
+            <a href="#">Meal Plans</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav>
 
-        <label>Password
-          <input type="password" id="password" placeholder="Enter your password" required>
-        </label>
+        <div class="nav-right">
+            <a href="#" class="signin">Sign In</a>
+            <span class="cart">🛒</span>
+        </div>
+    </header>
 
-        <div class="form-row">
-          <label class="checkbox">
-            <input type="checkbox" id="remember"> Remember me
-          </label>
-          <a class="muted small" href="#">Forgot password?</a>
+    <!-- Main Container -->
+    <section class="container">
+
+        <!-- Left Login Form -->
+        <div class="login-box">
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Sign in to continue to your meal plans</p>
+
+            <form>
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password">
+
+                <div class="remember">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn">Sign In</button>
+
+                <div class="or">Or continue with</div>
+
+                <div class="social-buttons">
+                    <button class="google">Google</button>
+                    <button class="facebook">Facebook</button>
+                </div>
+
+                <p class="signup">Don't have an account? <a href="#">Sign Up</a></p>
+            </form>
         </div>
 
-        <button class="btn primary" type="submit">Sign In</button>
+        <!-- Right Panel -->
+        <div class="side-panel">
+            <h3>Join the EatSync Community</h3>
+            <p>
+                Discover personalized meal plans that adapt to your progress.
+                Track your journey, achieve your goals, and transform your lifestyle with smart nutrition.
+            </p>
 
-        <div class="divider">Or continue with</div>
-        <div class="socials">
-          <button type="button" class="btn ghost">Google</button>
-          <button type="button" class="btn ghost">Facebook</button>
+            <img src="food.jpg" alt="Meal Image" class="meal-img">
+
+            <div class="stats">
+                <div><strong>50K+</strong><br>Users</div>
+                <div><strong>15K+</strong><br>Goals Met</div>
+                <div><strong>95%</strong><br>Success</div>
+            </div>
         </div>
 
-        <p class="small muted">Don't have an account? <a href="#">Sign Up</a></p>
-      </form>
     </section>
 
-    <aside class="login-panel">
-      <div class="panel-inner">
-        <h3>Join the EatSync Community</h3>
-        <p class="muted">Discover personalized meal plans that adapt to your progress. Track your journey, achieve your goals, and transform your lifestyle with smart nutrition.</p>
-        <img src="https://picsum.photos/seed/loginpanel/900/700" alt="meal dish">
-        <ul class="panel-stats">
-          <li><strong>50K+</strong> Users</li>
-          <li><strong>15K+</strong> Goals Met</li>
-          <li><strong>95%</strong> Success</li>
-        </ul>
-      </div>
-    </aside>
-  </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <h2>EatSync</h2>
+            <p>Your smart meal partner for a healthier lifestyle.</p>
+            <p>Personalized meal planning that syncs with your fitness goals.</p>
+        </div>
 
- <footer class="site-footer small">
-    <div class="container footer-grid">
-      <div>
-        <strong>EatSync</strong>
-        <p class="muted">Personalized meal planning that syncs with your fitness goals.</p>
-      </div>
-      <div class="footer-links">
-        <h5>Quick Links</h5>
-        <a href="index.html">Home</a>
-        <a href="meal-plans.html">Meal Plans</a>
-      </div>
-      <div>
-        <h5>Contact</h5>
-        <a href="mailto:support@eatsync.com">support@eatsync.com</a>
-      </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="#">Home</a>
+            <a href="#">GoalSync Builder</a>
+            <a href="#">Meal Plans</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Login / Sign Up</a>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: support@eatsync.com</p>
+            <p>Phone: +92 300 1234567</p>
+            <p>Islamabad, Pakistan</p>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        © 2025 EatSync. Developed by Abdul Hannan Rauf & Zainab Toor – IICT Final Project
     </div>
-    <div class="copyright">© 2025 EatSync. All rights reserved.</div>
-  </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
