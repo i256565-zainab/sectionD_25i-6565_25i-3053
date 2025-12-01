@@ -1,161 +1,212 @@
+HomePage HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EatSync — Home</title>
-
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pg1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EatSync – Meal Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="https://i.ibb.co/3s7k9mD/logo-circle.png" alt="EatSync" class="logo" />
-        <span class="brand-name">EatSync</span>
-      </div>
 
-      <nav class="main-nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="meal-plans.html">GoalSync Builder</a>
-        <a href="meal-plans.html">Meal Plans</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-      </nav>
+    <!-- NAVBAR -->
+    <header>
+        <div class="container nav">
+            <div class="logo">EatSync</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">EatSync Builder</a></li>
+                    <li><a href="#">Meal Plans</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
 
-      <div class="header-actions">
-        <a class="btn ghost" href="login.html">Sign In</a>
-        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
-      </div>
-    </div>
+            <div class="auth">
+                <a href="#">Sign In</a>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+            </div>
+        </div>
+    </header>
 
-    <div class="mobile-nav" id="mobileNav">
-      <a href="index.html">Home</a>
-      <a href="meal-plans.html">GoalSync Builder</a>
-      <a href="meal-plans.html">Meal Plans</a>
-      <a href="login.html">Sign In</a>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <main>
+    <!-- HERO -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1>Your Smart Meal Partner</h1>
-          <p class="lead">Personalized meal planning that syncs with your fitness goals. Track your progress, adjust your nutrition, and achieve results with intelligent meal recommendations.</p>
-          <div class="hero-cta">
-            <a class="btn primary" href="meal-plans.html">Browse Meal Plans</a>
-            <a class="btn outline" href="#">Learn More</a>
-          </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Your Smart Meal Partner</h1>
+                <p>Personalized meal planning that syncs with your fitness goals. Choose your progress, adjust anytime, and achieve results with intelligent meal recommendations.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn main">Browse Meal Plans</a>
+                    <a href="#" class="btn outline">Learn More</a>
+                </div>
+            </div>
 
-          <ul class="quick-stats">
-            <li><strong>50K+</strong><span>Active Users</span></li>
-            <li><strong>15K+</strong><span>Goals Achieved</span></li>
-            <li><strong>95%</strong><span>Success Rate</span></li>
-            <li><strong>100K+</strong><span>Meals Planned</span></li>
-          </ul>
+            <div class="hero-img">
+                <img src="meal.jpg" alt="Meal Plan">
+            </div>
         </div>
-
-        <div class="hero-media">
-          <img src="https://picsum.photos/seed/eatsync1/900/520" alt="Meal" />
-        </div>
-      </div>
     </section>
 
-    <!-- Popular plans -->
-    <section class="container popular">
-      <h2>Popular This Week</h2>
-      <p class="muted">Discover our most popular meal plans trusted by thousands</p>
-
-      <div class="plans-grid">
-        <article class="plan-card">
-          <img src="https://picsum.photos/seed/weightloss/600/380" alt="">
-          <div class="card-body">
-            <h3>Weight Loss Pro</h3>
-            <p class="muted small">Balanced meals designed for sustainable weight loss</p>
-            <div class="card-meta">
-              <div>Rs. <strong>12,999</strong>/month</div>
-              <div>Calories/day: 1500-1800</div>
+    <!-- STATS -->
+    <section class="stats">
+        <div class="container stats-row">
+            <div class="stat-box">
+                <h2>50K+</h2>
+                <p>Active Users</p>
             </div>
-            <a class="btn small primary" href="meal-plans.html">View Details</a>
-          </div>
-        </article>
-
-        <article class="plan-card">
-          <img src="https://picsum.photos/seed/musclegain/600/380" alt="">
-          <div class="card-body">
-            <h3>Muscle Gain</h3>
-            <p class="muted small">High-protein meals to support muscle growth</p>
-            <div class="card-meta">
-              <div>Rs. <strong>15,999</strong>/month</div>
-              <div>Calories/day: 2500-3000</div>
+            <div class="stat-box">
+                <h2>200+</h2>
+                <p>Goals Achieved</p>
             </div>
-            <a class="btn small primary" href="meal-plans.html">View Details</a>
-          </div>
-        </article>
-
-        <article class="plan-card">
-          <img src="https://picsum.photos/seed/balanced/600/380" alt="">
-          <div class="card-body">
-            <h3>Balanced Living</h3>
-            <p class="muted small">Nutritious meals for a healthy lifestyle</p>
-            <div class="card-meta">
-              <div>Rs. <strong>11,999</strong>/month</div>
-              <div>Calories/day: 2000-2200</div>
+            <div class="stat-box">
+                <h2>10K+</h2>
+                <p>Meals Planned</p>
             </div>
-            <a class="btn small primary" href="meal-plans.html">View Details</a>
-          </div>
-        </article>
-      </div>
+        </div>
     </section>
 
-    <section class="why container">
-      <h2>Why Choose EatSync?</h2>
-      <div class="why-grid">
-        <div class="why-card">
-          <h4>Personalized Plans</h4>
-          <p>Create plans tailored to your needs and preferences.</p>
+    <!-- POPULAR PLANS -->
+    <section class="popular">
+        <div class="container">
+            <h2>Start Your Journey Today</h2>
+            <p>Discover our most popular meal plans trusted by thousands.</p>
+
+            <div class="cards">
+                <!-- CARD 1 -->
+                <div class="card">
+                    <img src="meal1.jpg" alt="">
+                    <div class="card-content">
+                        <span class="label">Popular</span>
+                        <h3>Weight Loss Pro</h3>
+                        <p>Low-calorie meals customized to help you lose weight effectively and sustainably.</p>
+                        <a href="#" class="btn small">View Details</a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card">
+                    <img src="meal2.jpg" alt="">
+                    <div class="card-content">
+                        <span class="label green">New</span>
+                        <h3>Muscle Gain</h3>
+                        <p>High-protein meals designed for strength and muscle building.</p>
+                        <a href="#" class="btn small">View Details</a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card">
+                    <img src="meal3.jpg" alt="">
+                    <div class="card-content">
+                        <h3>Balanced Living</h3>
+                        <p>A nutritious plan with a mix of proteins, carbs, and veggies.</p>
+                        <a href="#" class="btn small">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center">
+                <a href="#" class="btn main">Explore All Plans</a>
+            </div>
         </div>
-        <div class="why-card">
-          <h4>Expert Nutrition</h4>
-          <p>Meal plans designed by certified nutrition specialists.</p>
-        </div>
-        <div class="why-card">
-          <h4>Flexible & Convenient</h4>
-          <p>Choose from weekly or monthly options and delivery schedules.</p>
-        </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>EatSync</strong>
-        <p class="muted">Your Smart Meal Partner for a healthier lifestyle.</p>
-      </div>
+    <!-- WHY CHOOSE SECTION -->
+    <section class="why">
+        <div class="container">
+            <h2>Why Choose EatSync?</h2>
+            <div class="why-grid">
 
-      <div class="footer-links">
-        <h5>Quick Links</h5>
-        <a href="index.html">Home</a>
-        <a href="meal-plans.html">Meal Plans</a>
-        <a href="#">About</a>
-      </div>
+                <div class="why-box">
+                    <h3>Personalized Plans</h3>
+                    <p>Custom recommendations based on your lifestyle and fitness goals.</p>
+                </div>
 
-      <div>
-        <h5>Contact Us</h5>
-        <a href="mailto:support@eatsync.com">support@eatsync.com</a>
-        <div class="muted">Islamabad, Pakistan</div>
-      </div>
-    </div>
+                <div class="why-box">
+                    <h3>Expert Advice</h3>
+                    <p>Nutritionist-approved plans to support long-term health.</p>
+                </div>
 
-    <div class="copyright">© 2025 EatSync. All rights reserved.</div>
-  </footer>
+                <div class="why-box">
+                    <h3>Flexible & Convenient</h3>
+                    <p>Easily switch plans, change meals, or adjust your preferences anytime.</p>
+                </div>
+            </div>
 
-  <script src="script.js"></script>
+            <div class="join-box">
+                <p>Join thousands of satisfied customers transforming their eating habits.</p>
+                <a class="btn outline" href="#">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how">
+        <div class="container">
+            <h2>How EatSync Works</h2>
+
+            <div class="how-grid">
+
+                <div class="step">
+                    <h3>1. Set Your Goals</h3>
+                    <p>Tell us your fitness journey and we’ll align your meals with your target.</p>
+                </div>
+
+                <div class="step">
+                    <h3>2. Get Your Plan</h3>
+                    <p>Receive a personalized meal plan created by experts.</p>
+                </div>
+
+                <div class="step">
+                    <h3>3. Track & Adjust</h3>
+                    <p>Sync your progress and modify your meals anytime.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>EatSync</h3>
+                <p>Your smart meal partner for fitness-aligned daily meals.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>EatSync Builder</li>
+                    <li>Meal Plans</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>My Account</h4>
+                <ul>
+                    <li>Shopping Cart</li>
+                    <li>Checkout</li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>help@eatsync.com</li>
+                    <li>+92 302 1234567</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2025 EatSync. All rights reserved.
+        </div>
+    </footer>
+
 </body>
 </html>
