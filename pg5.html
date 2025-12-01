@@ -1,136 +1,143 @@
+final checkout HTMl
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shopping Cart - EatSync</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EatSync - Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo"><img src="logo.png"></div>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="EatSync">
+        </div>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">GoalSync Builder</a>
-        <a href="#">Meal Plans</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-    </nav>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">GoalSync Builder</a>
+            <a href="#">Meal Plans</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav>
 
-    <div class="nav-actions">
-        <a href="#" class="signin">Sign In</a>
-        <a href="#" class="cart"><i class="fa fa-shopping-cart"></i><span class="badge">1</span></a>
-    </div>
-</header>
+        <div class="nav-icons">
+            <a href="#">Sign In</a>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">1</span>
+        </div>
+    </header>
 
-<!-- CART SECTION -->
-<section class="cart-container">
+    <!-- MAIN CONTENT -->
+    <section class="cart-container">
 
-    <h2>Shopping Cart</h2>
-
-    <div class="cart-grid">
-
-        <!-- LEFT: Cart Item -->
+        <!-- LEFT: CART ITEMS -->
         <div class="cart-items">
+            <h2>Shopping Cart</h2>
 
-            <div class="cart-item">
-                <img src="meal-bowl.jpg">
+            <div class="cart-card">
+                <img src="meal.jpg" alt="Meal Image">
 
                 <div class="item-info">
                     <h3>Weight Loss Pro</h3>
                     <p>Monthly Subscription</p>
 
-                    <div class="qty-box">
+                    <div class="quantity-control">
                         <button>-</button>
                         <span>1</span>
                         <button>+</button>
                     </div>
                 </div>
 
-                <div class="item-price">Rs. 12,999</div>
+                <div class="price">Rs. 12,999</div>
 
-                <button class="delete-btn"><i class="fa fa-trash"></i></button>
+                <button class="delete-btn">
+                    <i class="fa-regular fa-trash-can"></i>
+                </button>
             </div>
 
             <button class="continue-btn">Continue Shopping</button>
         </div>
 
-        <!-- RIGHT: Order Summary -->
-        <aside class="order-summary">
+        <!-- RIGHT: ORDER SUMMARY -->
+        <div class="order-summary">
             <h3>Order Summary</h3>
 
             <div class="summary-row">
-                <span>Subtotal (1 item)</span>
+                <span>Subtotal (1 items)</span>
                 <span>Rs. 12,999</span>
             </div>
 
             <div class="summary-row">
                 <span>Shipping</span>
-                <strong>FREE</strong>
+                <span class="green-text">FREE</span>
             </div>
 
-            <div class="summary-row total">
-                <span>Total</span>
+            <div class="summary-total">
+                <strong>Total</strong>
                 <strong>Rs. 12,999</strong>
             </div>
 
-            <button class="btn-primary">Proceed to Checkout</button>
+            <button class="checkout-btn">Proceed to Checkout</button>
 
-            <ul class="summary-features">
-                <li>✔ Secure checkout</li>
-                <li>✔ 30-day money-back guarantee</li>
-                <li>✔ Cancel subscription anytime</li>
+            <ul class="summary-info">
+                <li>Secure checkout</li>
+                <li>30-day money-back guarantee</li>
+                <li>Cancel subscription anytime</li>
             </ul>
-        </aside>
-    </div>
-</section>
-
-<!-- FOOTER (same as Page 1) -->
-<footer class="footer">
-    <div class="footer-left">
-        <img src="logo.png" class="footer-logo">
-        <p>Your smart meal partner for a healthier lifestyle. Personalized meal planning that syncs with your fitness goals.</p>
-        <div class="social">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
         </div>
-    </div>
 
-    <div class="footer-links">
-        <h4>Quick Links</h4>
-        <a href="#">Home</a>
-        <a href="#">GoalSync Builder</a>
-        <a href="#">Meal Plans</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-        <a href="#">Login / Sign Up</a>
-    </div>
+    </section>
 
-    <div class="footer-links">
-        <h4>My Account</h4>
-        <a href="#">Shopping Cart</a>
-        <a href="#">Checkout</a>
-    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
 
-    <div class="footer-links">
-        <h4>Contact Us</h4>
-        <p><i class="fa fa-envelope"></i> support@eatsync.com</p>
-        <p><i class="fa fa-phone"></i> +92 300 1234567</p>
-        <p><i class="fa fa-location-dot"></i> Islamabad, Pakistan</p>
-    </div>
-</footer>
+        <div class="footer-col">
+            <img src="logo.png" alt="EatSync" class="footer-logo">
+            <p>Your Smart Meal Partner for a healthier lifestyle. Personalized meal planning that syncs with your fitness goals.</p>
+            <div class="socials">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
 
-<div class="copyright">
-    © 2025 EatSync. All rights reserved.<br>
-    Developed by Abdul Hannan Rauf & Zainab Toor – IICT Final Project
-</div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="#">Home</a>
+            <a href="#">GoalSync Builder</a>
+            <a href="#">Meal Plans</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Login / Sign Up</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>My Account</h4>
+            <a href="#">Shopping Cart</a>
+            <a href="#">Checkout</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p><i class="fa-regular fa-envelope"></i> support@eatsync.com</p>
+            <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+            <p><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</p>
+        </div>
+
+    </footer>
+
+    <div class="footer-bottom">
+        © 2025 EatSync. All rights reserved.<br>
+        Developed by Abdul Hannan Rauf & Zainab Toor - IICT Final Project
+    </div>
 
 </body>
 </html>
