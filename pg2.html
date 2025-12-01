@@ -21,3 +21,53 @@
       </nav>
     </div>
   </header>
+
+  <main class="container login-grid">
+    <section class="login-card">
+      <div class="card-top">
+        <img src="https://i.ibb.co/3s7k9mD/logo-circle.png" alt="logo" style="width:40px">
+        <h2>Welcome Back</h2>
+        <p class="muted">Sign in to continue to your meal plans</p>
+      </div>
+
+      <form id="loginForm" class="form">
+        <label>Email Address
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+
+        <label>Password
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </label>
+
+        <div class="form-row">
+          <label class="checkbox">
+            <input type="checkbox" id="remember"> Remember me
+          </label>
+          <a class="muted small" href="#">Forgot password?</a>
+        </div>
+
+        <button class="btn primary" type="submit">Sign In</button>
+
+        <div class="divider">Or continue with</div>
+        <div class="socials">
+          <button type="button" class="btn ghost">Google</button>
+          <button type="button" class="btn ghost">Facebook</button>
+        </div>
+
+        <p class="small muted">Don't have an account? <a href="#">Sign Up</a></p>
+      </form>
+    </section>
+
+    <aside class="login-panel">
+      <div class="panel-inner">
+        <h3>Join the EatSync Community</h3>
+        <p class="muted">Discover personalized meal plans that adapt to your progress. Track your journey, achieve your goals, and transform your lifestyle with smart nutrition.</p>
+        <img src="https://picsum.photos/seed/loginpanel/900/700" alt="meal dish">
+        <ul class="panel-stats">
+          <li><strong>50K+</strong> Users</li>
+          <li><strong>15K+</strong> Goals Met</li>
+          <li><strong>95%</strong> Success</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
