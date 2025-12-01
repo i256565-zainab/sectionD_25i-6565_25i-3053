@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EatSync</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .text-primary { color: #00A86B; }
+        .bg-primary { background-color: #00A86B; }
+        .bg-primary-light { background-color: #e6f7f2; }
+        .border-primary { border-color: #00A86B; }
+        .hover-bg-primary:hover { background-color: #008f5b; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white py-4 px-6 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full border-2 border-[#00A86B] flex items-center justify-center text-[#00A86B]">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <span class="text-xl font-bold text-gray-800">Eat<span class="text-primary">Sync</span></span>
+            </div>
+
+            <!-- Links -->
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
+                <a href="#" class="hover:text-primary">Home</a>
+                <a href="#" class="text-primary">GoalSync Builder</a>
+                <a href="#" class="hover:text-primary">Meal Plans</a>
+                <a href="#" class="hover:text-primary">About Us</a>
+                <a href="#" class="hover:text-primary">Contact</a>
+            </div>
+
+            <!-- Right Icons -->
+            <div class="flex items-center gap-6 text-sm font-medium text-gray-600">
+                <a href="#" class="flex items-center gap-2 hover:text-primary">
+                    <i class="far fa-user"></i> Sign In
+                </a>
+                <div class="relative cursor-pointer">
+                    <i class="fas fa-shopping-cart text-lg"></i>
+                    <span class="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">1</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="bg-[#F0FDF9] py-12 text-center">
+        <h1 class="text-3xl font-semibold text-gray-800 mb-2">Get in Touch</h1>
+        <p class="text-gray-500">Have questions? We're here to help. Reach out to us through any of these channels.</p>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <!-- Email -->
+            <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-md transition">
+                <div class="w-12 h-12 bg-[#D1FAE5] text-primary rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                    <i class="far fa-envelope"></i>
+                </div>
+                <h3 class="font-medium text-gray-800 mb-1">Email Us</h3>
+                <p class="text-xs text-gray-500 mb-3">Our team will respond within 24 hours</p>
+                <a href="mailto:support@eatsync.com" class="text-primary font-medium text-sm">support@eatsync.com</a>
+            </div>
+            <!-- Call -->
+            <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-md transition">
+                <div class="w-12 h-12 bg-[#D1FAE5] text-primary rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3 class="font-medium text-gray-800 mb-1">Call Us</h3>
+                <p class="text-xs text-gray-500 mb-3">Monday to Friday, 9am to 6pm</p>
+                <a href="tel:+923001234567" class="text-primary font-medium text-sm">+92 300 1234567</a>
+            </div>
+            <!-- Visit -->
+            <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-md transition">
+                <div class="w-12 h-12 bg-[#D1FAE5] text-primary rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="font-medium text-gray-800 mb-1">Visit Us</h3>
+                <p class="text-xs text-gray-500 mb-3">Come say hello at our office</p>
+                <span class="text-primary font-medium text-sm cursor-pointer">Islamabad, Pakistan</span>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Contact Form -->
+            <div class="lg:col-span-2 border rounded-2xl p-8">
+                <div class="flex items-center gap-2 mb-6">
+                    <i class="far fa-comment-alt text-primary"></i>
+                    <h2 class="font-medium text-lg">Send us a Message</h2>
+                </div>
+
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-gray-500 mb-1">First Name</label>
+                            <input type="text" placeholder="John" class="w-full border border-gray-200 rounded-lg p-2.5 focus:outline-none focus:border-primary text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-gray-500 mb-1">Last Name</label>
+                            <input type="text" placeholder="Doe" class="w-full border border-gray-200 rounded-lg p-2.5 focus:outline-none focus:border-primary text-sm">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Email</label>
+                        <input type="email" placeholder="you@example.com" class="w-full border border-gray-200 rounded-lg p-2.5 focus:outline-none focus:border-primary text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Subject</label>
+                        <input type="text" placeholder="How can we help?" class="w-full border border-gray-200 rounded-lg p-2.5 focus:outline-none focus:border-primary text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-gray-500 mb-1">Message</label>
+                        <textarea rows="4" placeholder="Tell us more about your inquiry..." class="w-full border border-gray-200 rounded-lg p-2.5 focus:outline-none focus:border-primary text-sm"></textarea>
+                    </div>
+                    <button type="button" class="w-full bg-primary text-white py-2.5 rounded-lg font-medium hover:bg-[#008f5b] transition flex items-center justify-center gap-2">
+                        <i class="fas fa-paper-plane text-xs"></i> Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="space-y-6">
+                <!-- Hours -->
+                <div class="border rounded-2xl p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="far fa-clock text-primary"></i>
+                        <h3 class="font-medium">Support Hours</h3>
+                    </div>
+                    <div class="space-y-2 text-sm text-gray-600">
+                        <div class="flex justify-between">
+                            <span>Monday - Friday</span>
+                            <span class="font-medium">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Saturday</span>
+                            <span class="font-medium">10:00 AM - 4:00 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Sunday</span>
+                            <span class="font-medium">Closed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Socials -->
+                <div class="border rounded-2xl p-6">
+                    <h3 class="font-medium mb-2">Follow Us</h3>
+                    <p class="text-xs text-gray-500 mb-4">Stay updated with nutrition tips, success stories, and healthy recipes.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 text-gray-700"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 text-gray-700"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 text-gray-700"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#0B1221] text-white mt-auto pt-16 pb-8 text-sm">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <!-- Brand -->
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#00A86B]">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <span class="text-xl font-bold">Eat<span class="text-primary">Sync</span></span>
+                </div>
+                <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                    Your Smart Meal Partner for a healthier lifestyle. Personalized meal planning that syncs with your fitness goals.
+                </p>
+                <div class="flex gap-3">
+                    <a href="#" class="w-8 h-8 rounded-lg bg-[#1F2937] flex items-center justify-center hover:bg-gray-700 text-gray-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-lg bg-[#1F2937] flex items-center justify-center hover:bg-gray-700 text-gray-400"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-lg bg-[#1F2937] flex items-center justify-center hover:bg-gray-700 text-gray-400"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-lg bg-[#1F2937] flex items-center justify-center hover:bg-gray-700 text-gray-400"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="font-medium mb-4">Quick Links</h4>
+                <ul class="space-y-3 text-gray-400 text-xs">
+                    <li><a href="#" class="hover:text-primary">Home</a></li>
+                    <li><a href="#" class="hover:text-primary">GoalSync Builder</a></li>
+                    <li><a href="#" class="hover:text-primary">Meal Plans</a></li>
+                    <li><a href="#" class="hover:text-primary">About Us</a></li>
+                    <li><a href="#" class="hover:text-primary">Contact</a></li>
+                    <li><a href="#" class="hover:text-primary">Login / Sign Up</a></li>
+                </ul>
+            </div>
+
+            <!-- My Account -->
+            <div>
+                <h4 class="font-medium mb-4">My Account</h4>
+                <ul class="space-y-3 text-gray-400 text-xs">
+                    <li><a href="#" class="hover:text-primary">Shopping Cart</a></li>
+                    <li><a href="#" class="hover:text-primary">Checkout</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4 class="font-medium mb-4">Contact Us</h4>
+                <ul class="space-y-4 text-gray-400 text-xs">
+                    <li class="flex items-center gap-2"><i class="far fa-envelope text-primary"></i> support@eatsync.com</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-phone-alt text-primary"></i> +92 300 1234567</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-primary"></i> Islamabad, Pakistan</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 text-center text-xs text-gray-500">
+            <p class="mb-2">&copy; 2025 EatSync. All rights reserved.</p>
+            <p>Developed by Abdul Hannan Rauf & Zainab Toor - IICT Final Project</p>
+        </div>
+    </footer>
+</body>
+</html>
