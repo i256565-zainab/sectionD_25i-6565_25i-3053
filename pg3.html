@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EatSync — Meal Plans</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://i.ibb.co/3s7k9mD/logo-circle.png" alt="EatSync" class="logo" />
+        <span class="brand-name">EatSync</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="meal-plans.html" class="active">Meal Plans</a>
+        <a href="login.html">Sign In</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn ghost" href="login.html">Sign In</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn2" aria-label="Menu">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav2">
+      <a href="index.html">Home</a>
+      <a href="meal-plans.html">Meal Plans</a>
+      <a href="login.html">Sign In</a>
+    </div>
+  </header>
+
+  <main class="container mealpage">
+    <section class="filter-bar">
+      <h2>Meal Plans</h2>
+      <p class="muted">Discover the perfect meal plan to achieve your fitness goals</p>
+
+      <div class="filters">
+        <div class="filter-group">
+          <label>Category</label>
+          <div class="chips" id="categoryChips">
+            <button class="chip active" data-cat="all">All Plans</button>
+            <button class="chip" data-cat="weight-loss">Weight Loss</button>
+            <button class="chip" data-cat="muscle-gain">Muscle Gain</button>
+            <button class="chip" data-cat="balanced">Balanced</button>
+            <button class="chip" data-cat="vegan">Vegan</button>
+            <button class="chip" data-cat="keto">Keto</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Duration</label>
+          <div class="chips">
+            <button class="chip active" data-duration="all">All</button>
+            <button class="chip" data-duration="weekly">Weekly</button>
+            <button class="chip" data-duration="monthly">Monthly</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans-list">
+      <div class="cards-grid" id="plansGrid">
+        <!-- Cards: each card has data-cat attribute matching chips -->
+        <article class="plan tile" data-cat="weight-loss">
+          <img src="https://picsum.photos/seed/p1/600/360" alt="">
+          <div class="tile-body">
+            <h3>Weight Loss Pro</h3>
+            <p class="muted small">Balanced meals designed for sustainable weight loss</p>
+            <div class="tile-meta">
+              <div>Rs.<strong>12,999</strong>/month</div>
+              <div>Calories/day: 1500-1800</div>
+            </div>
+            <a class="btn small primary" href="#">View Details</a>
+          </div>
+        </article>
+
+        <article class="plan tile" data-cat="muscle-gain">
+          <img src="https://picsum.photos/seed/p2/600/360" alt="">
+          <div class="tile-body">
+            <h3>Muscle Gain</h3>
+            <p class="muted small">High-protein meals to support muscle growth</p>
+            <div class="tile-meta">
+              <div>Rs.<strong>15,999</strong>/month</div>
+              <div>Calories/day: 2500-3000</div>
+            </div>
+            <a class="btn small primary" href="#">View Details</a>
+          </div>
+        </article>
+
+        <article class="plan tile" data-cat="balanced">
+          <img src="https://picsum.photos/seed/p3/600/360" alt="">
+          <div class="tile-body">
+            <h3>Balanced Living</h3>
+            <p class="muted small">Nutritious meals for a healthy lifestyle</p>
+            <div class="tile-meta">
+              <div>Rs.<strong>11,999</strong>/month</div>
+              <div>Calories/day: 2000-2200</div>
+            </div>
+            <a class="btn small primary" href="#">View Details</a>
+          </div>
+        </article>
