@@ -1,58 +1,62 @@
+CheckOut HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weight Loss Pro - EatSync</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EatSync - Weight Loss Pro</title>
+    <link rel="stylesheet" href="meal-plan-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- Navbar -->
 <header class="navbar">
-    <div class="logo"> <img src="logo.png" alt="EatSync"> </div>
+    <div class="logo">EatSync</div>
 
     <nav>
         <a href="#">Home</a>
-        <a href="#">GoalSync Builder</a>
+        <a class="active" href="#">GoalSync Builder</a>
         <a href="#">Meal Plans</a>
         <a href="#">About Us</a>
         <a href="#">Contact</a>
     </nav>
 
-    <div class="nav-actions">
+    <div class="nav-right">
         <a href="#" class="signin">Sign In</a>
-        <a href="cart.html" class="cart"><i class="fa fa-shopping-cart"></i></a>
+        <span class="cart">🛒</span>
     </div>
 </header>
 
-<!-- MAIN CONTENT -->
-<section class="product-container">
+<!-- Main Container -->
+<section class="main">
 
-    <!-- LEFT: Image + description -->
-    <div class="product-left">
-        <img src="meal-bowl.jpg" class="product-image">
+    <!-- Left Side -->
+    <div class="left-content">
 
-        <div class="product-box">
+        <!-- Hero Image -->
+        <img src="hero.jpg" alt="Meal Image" class="hero-img">
+
+        <!-- Plan Description -->
+        <div class="plan-box">
             <h2>Weight Loss Pro</h2>
-            <p>Balanced meal plan designed to help you lose weight sustainably while maintaining energy and nutrition.</p>
+            <p class="desc">
+                Balanced meal plan designed to help you lose weight sustainably while maintaining energy and nutrition.
+            </p>
 
-            <div class="details-row">
-                <div class="detail">
-                    <i class="fa fa-crosshairs"></i>
-                    <p><strong>Target</strong><br>Weight Loss</p>
+            <div class="info-grid">
+                <div>
+                    <h4>Target</h4>
+                    <p>Weight Loss</p>
                 </div>
-
-                <div class="detail">
-                    <i class="fa fa-clock"></i>
-                    <p><strong>Prep Time</strong><br>30–45 min</p>
+                <div>
+                    <h4>Prep Time</h4>
+                    <p>30–45 min</p>
                 </div>
-
-                <div class="detail">
-                    <i class="fa fa-user"></i>
-                    <p><strong>Serving</strong><br>1 person</p>
+                <div>
+                    <h4>Serving</h4>
+                    <p>1 person</p>
                 </div>
             </div>
         </div>
@@ -60,21 +64,22 @@
         <!-- What's Included -->
         <div class="included-box">
             <h3>What's Included</h3>
-            <ul>
-                <li>✔ Personalized calorie tracking</li>
-                <li>✔ Weekly grocery lists</li>
-                <li>✔ Nutritionist-approved recipes</li>
-                <li>✔ Progress tracking & analytics</li>
-                <li>✔ Mobile app access</li>
-                <li>✔ Community support</li>
-                <li>✔ Meal prep guides</li>
-                <li>✔ 24/7 customer support</li>
-            </ul>
+
+            <div class="included-grid">
+                <p>✔ Personalized calorie tracking</p>
+                <p>✔ Weekly grocery lists</p>
+                <p>✔ Nutritionist-approved recipes</p>
+                <p>✔ Progress tracking & analytics</p>
+                <p>✔ Mobile app access</p>
+                <p>✔ Community support</p>
+                <p>✔ Meal prep guides</p>
+                <p>✔ 24/7 customer support</p>
+            </div>
         </div>
 
-        <!-- Sample Week Menu -->
-        <div class="sample-box">
-            <h3>Sample Week 1 Meal Plan</h3>
+        <!-- Meal Plan Dropdown -->
+        <div class="dropdown-box">
+            <label>Sample Week 1 Meal Plan</label>
             <select>
                 <option>Monday</option>
                 <option>Tuesday</option>
@@ -83,58 +88,55 @@
                 <option>Friday</option>
             </select>
         </div>
+
     </div>
 
-    <!-- RIGHT: Pricing -->
-    <aside class="pricing-box">
+    <!-- Right Side: Choose Your Plan -->
+    <div class="right-content">
 
-        <h3>Choose Your Plan</h3>
+        <div class="plan-card">
 
-        <div class="plan-option">
-            <div>
-                <h4>Weekly</h4>
-                <p>Rs. 3,999 <span>/weekly</span></p>
+            <h3>Choose Your Plan</h3>
+
+            <!-- Weekly -->
+            <div class="price-option">
+                <p class="left">Weekly</p>
+                <p class="right">Rs. 3,999</p>
             </div>
+
+            <!-- Monthly -->
+            <div class="price-option highlight">
+                <p class="left">Monthly</p>
+                <p class="right">Rs. 12,999 <span class="save">Save 22%</span></p>
+            </div>
+
+            <!-- Quarterly -->
+            <div class="price-option">
+                <p class="left">Quarterly</p>
+                <p class="right">Rs. 34,999 <span class="save">Save 32%</span></p>
+            </div>
+
+            <button class="add-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+
+            <ul class="perks">
+                <li>✔ Cancel anytime</li>
+                <li>✔ 30-day money-back guarantee</li>
+                <li>✔ Instant digital access</li>
+            </ul>
+
         </div>
 
-        <div class="plan-option selected">
-            <div>
-                <h4>Monthly</h4>
-                <p>Rs. 12,999 <span>/monthly</span></p>
-            </div>
-            <span class="save-tag">Save 22%</span>
-        </div>
+    </div>
 
-        <div class="plan-option">
-            <div>
-                <h4>Quarterly</h4>
-                <p>Rs. 34,999 <span>/quarterly</span></p>
-            </div>
-            <span class="save-tag">Save 32%</span>
-        </div>
-
-        <button class="btn-primary">Add to Cart</button>
-        <button class="btn-outline">Buy Now</button>
-
-        <ul class="pricing-features">
-            <li>✔ Cancel anytime</li>
-            <li>✔ 30-day money-back guarantee</li>
-            <li>✔ Instant digital access</li>
-        </ul>
-    </aside>
 </section>
 
-<!-- FOOTER -->
+<!-- Footer -->
 <footer class="footer">
     <div class="footer-left">
-        <img src="logo.png" class="footer-logo">
-        <p>Your smart meal partner for a healthier lifestyle. Personalized meal planning that syncs with your fitness goals.</p>
-        <div class="social">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-        </div>
+        <h2>EatSync</h2>
+        <p>Your smart meal partner for a healthier lifestyle.</p>
+        <p>Personalized meal planning that syncs with your fitness goals.</p>
     </div>
 
     <div class="footer-links">
@@ -147,24 +149,17 @@
         <a href="#">Login / Sign Up</a>
     </div>
 
-    <div class="footer-links">
-        <h4>My Account</h4>
-        <a href="#">Shopping Cart</a>
-        <a href="#">Checkout</a>
-    </div>
-
-    <div class="footer-links">
+    <div class="footer-contact">
         <h4>Contact Us</h4>
-        <p><i class="fa fa-envelope"></i> support@eatsync.com</p>
-        <p><i class="fa fa-phone"></i> +92 300 1234567</p>
-        <p><i class="fa fa-location-dot"></i> Islamabad, Pakistan</p>
+        <p>Email: support@eatsync.com</p>
+        <p>Phone: +92 300 1234567</p>
+        <p>Islamabad, Pakistan</p>
     </div>
-
 </footer>
 
 <div class="copyright">
     © 2025 EatSync. All rights reserved.<br>
-    Developed by Abdul Hannan Rauf & Zainab Toor – IICT Final Project
+    Developed by Abdul Hannan Rauf & Zainab Toor - IICT Final Project
 </div>
 
 </body>

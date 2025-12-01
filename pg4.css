@@ -1,0 +1,211 @@
+CheckOut CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #f7f9fa;
+}
+
+.navbar {
+    background: white;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar .active {
+    color: #0ba36a;
+    font-weight: 600;
+}
+
+.nav-right .signin {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Layout */
+.main {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+}
+
+/* Left Side */
+.left-content {
+    flex: 2;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.plan-box {
+    background: white;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.plan-box .desc {
+    color: #666;
+    margin: 10px 0 20px 0;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-grid div {
+    width: 30%;
+}
+
+.info-grid h4 {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Included Box */
+.included-box {
+    margin-top: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.included-grid {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+}
+
+/* Dropdown Box */
+.dropdown-box {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.dropdown-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.dropdown-box select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Right Sidebar */
+.right-content {
+    flex: 1;
+}
+
+.plan-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.price-option {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.highlight {
+    background: #eefef7;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.save {
+    background: #0ba36a;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.add-cart {
+    width: 100%;
+    margin: 15px 0;
+    padding: 12px;
+    background: #0ba36a;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.buy-now {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: 2px solid #0ba36a;
+    color: #0ba36a;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.perks {
+    list-style: none;
+    margin-top: 15px;
+    color: #555;
+}
+
+.perks li {
+    margin: 8px 0;
+}
+
+/* Footer */
+.footer {
+    background: #1d1d1d;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.footer a {
+    display: block;
+    margin: 5px 0;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer p {
+    color: #bbb;
+}
+
+.copyright {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+}
